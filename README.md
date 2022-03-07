@@ -57,3 +57,7 @@ Now open http://localhost:3030 in your browser to begin exploring the API. From 
 * Test suites for all test cases are placed in the `src/test/resources/testSuits` folder mainly in the `phpTravels.xml` and `apiPlayground.xml` files.
 * To start the execution right click on the test suite xml file and click Run.
 * After execution, `Allure Report` will be easily generated and opened on the default browser on your machine, Also you can find the `Extent Report` HTML file generated.
+
+### Notes:
+1. For UI Test Automation Scripts : `Captcha` will be out of scope test automation and need to ask the developers to disable it on test environment.
+2. Foe UI and API Manual Test Cases: Please visit [here](https://drive.google.com/drive/folders/1FGuPmZ_7bsGpGO__oDPqopwoElzk7ZwB?usp=sharing).
