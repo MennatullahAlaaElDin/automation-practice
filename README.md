@@ -60,6 +60,6 @@ Now open http://localhost:3030 in your browser to begin exploring the API. From 
 
 ### Notes:
 1. For UI Test Automation Scripts : `Captcha` will be out of test automation scope and need to ask the developers to disable it on test environment.
-2. For UI and API Manual Test Cases: Please visit [here](https://drive.google.com/drive/folders/1FGuPmZ_7bsGpGO__oDPqopwoElzk7ZwB?usp=sharing).
+2. For UI and API Manual Test Cases: Please visit [Automation Practice Documents](https://drive.google.com/drive/folders/1FGuPmZ_7bsGpGO__oDPqopwoElzk7ZwB?usp=sharing).
 
 ***
