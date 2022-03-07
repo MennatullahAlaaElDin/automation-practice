@@ -61,3 +61,31 @@ Now open http://localhost:3030 in your browser to begin exploring the API. From 
 ### Notes:
 1. For UI Test Automation Scripts : `Captcha` will be out of scope test automation and need to ask the developers to disable it on test environment.
 2. Foe UI and API Manual Test Cases: Please visit [here](https://drive.google.com/drive/folders/1FGuPmZ_7bsGpGO__oDPqopwoElzk7ZwB?usp=sharing).
+
+***
+| | | |
+|-|-|-|
+|Test [ID - Name]|Steps|Expected Result|
+|01.01 Check the response when return all items|1- use method GET: http://localhost:3030/categories 2- Check status code|Status code is 200|
+| |3- check default data limit|10|
+| |4- check default skip|0|
+| |5- check response schema|data is retrieved successfully and JSON response schema is valid|
+| | | |
+|01.02 Check the limit output (pagination) with GET method|1- use method GET: http://localhost:3030/categories?$limit={{limit}} 2- Check status code|Status code is 200|
+| |3- Case A: check the response when limit value is between  0 < {{limit}} <= 25 |the number of "data" item should equal limit value length of "data" = {{limit}}|
+| |4- Case B: check the response when limit value is zero, {{limit}} = 0 |data item should be empty "data"=[]|
+| |5- Case C: check the response when limit value is {{limit}} > 25 |the items in "data" itemis limited to 25 items only length of "data" = 25|
+| |6- Case D: check the response when limit value is negative, ex: {{limit}} = -50 |negative value of limit is translated into positive|
+| |7- check response schema|data is retrieved successfully and JSON response schema is valid|
+| | | |
+|01.03 Check the skip output with GET method|1- use method GET: http://localhost:3030/categories?$skip={{skip}} 2- Check status code|Status code is 200|
+| |3- check the response when : Case A: skip value is {{skip}} < total number of items && {{limit}} != 0 && {{limit}} < total - {{skip}} ex : total : 4311 , limit = 10 (default), skip = 5|the first 5 {{skip}} records have been skipped and the number of "data" item should equal limit value length of "data" = {{limit}}|
+| |4- check the response when : Case B: skip value is {{skip}} < total number of items && {{limit}} != 0 && {{limit}} = total - {{skip}} ex : total : 4310 , limit = 10 (default), skip = 4300|the first 4300 {{skip}} records have been skipped and the number of "data" item should equal limit value  length of "data" = {{limit}}|
+| |5- Case C: check the response when : skip value is {{skip}} < total number of items && {{limit}} != 0 && {{limit}} > total - {{skip}} ex : total : 4311 , limit = 10 (default), skip = 4310|the first 4310 {{skip}} records have been skipped and the number of "data" item should equal : length of "data" = total - {{skip}} = 1|
+| |6- Case D: check the response when : skip value is {{skip}} >= total number of items ex : total : 4311 , skip = 4312|data item should be empty "data"=[]|
+| |7- Case E: check the response when skip value is negative, ex: {{skip}} = -50 |negative value of skip is translated into positive|
+| |8- check response schema|data is retrieved successfully and JSON response schema is valid|
+| | | |
+|01.04 Check error handling with GET method|1- use method GET: http://localhost:3030/categories?$limit={{limit}}&$skip={{skip}} Case A :  set {{limit}} or {{skip}} to any string value  ex: " " Then check the response|internal server error is retrieved: {     "name": "GeneralError",     "message": "SQLITE_ERROR: no such column: NaN",     "code": 500,     "className": "general-error",     "data": {},     "errors": {} }|
+| |2- use method GET:  http://localhost:3030/categories?$limit=&$skip= Case B :  leave {{limit}} or {{skip}} empty  Then check the response|internal server error is retrieved: {     "name": "GeneralError",     "message": "SQLITE_ERROR: no such column: NaN",     "code": 500,     "className": "general-error",     "data": {},     "errors": {} }|
+
