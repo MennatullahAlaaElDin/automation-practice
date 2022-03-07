@@ -13,7 +13,7 @@ Tests are using the best practice coding standards, design patterns for maintain
  
 ### Project Design:
 * GUI/API Object Model design pattern.
-* Fluent design (method chaining)
+* Fluent design `method chaining`.
 * Data driven design , eg: external `JSON` file.
 * Keyword driven design.
  
