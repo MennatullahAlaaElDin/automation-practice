@@ -1,0 +1,31 @@
+{
+	"defaultLimit": 10,
+	"minLimit": 0 ,
+	"maxLimit": 25 ,
+	"inRangLimit": 15,
+	"outOfRangLimit": 50,
+	"-veLimit": -7,
+	"inValidLimitFormat": "l",
+	
+	"defaultSkip": 0,
+	"minSkip": 0,
+	"largeSkip": 2500,
+	"-veSkip": -10,
+	"emptySkip": "",
+	
+	"existValidID" : "abcat0010000",
+	"inValidID": "hello123456",
+	"newID": "test",
+	"updateByID" : "abcat0101000",
+	"validIDToBeDeleted" : "123456",
+	
+	"validName" : "*TV*",
+	"inValidName" : "*Hello World*",
+	"newName": "test category",
+	
+	
+	
+	"emptyRecords" : 0
+	
+	
+}

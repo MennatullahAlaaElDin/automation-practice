@@ -1,0 +1,32 @@
+{
+	"validFirstName": "Menna",
+	"inValidFirstName": "0",
+	
+	"validLastName": "Alaa",
+	"inValidLastName": "0",
+	
+	"validEmail": "menna123@test.com",
+	"inValidEmail": "ab@test",
+	"alreadyExistEmail": "voyiyi7188@sueshaw.co",
+	
+	"validPhoneNumber": "12345678",
+	"inValidPhoneNumber": "T2",
+	
+	"validStreetAddress": "1st Street , Maadi",
+	"inValidStreetAddress": "0 ",
+	
+	"validCity": "Cairo",
+	"inValidCity": "0 ",
+	
+	"validPassword": "123456",
+	"emptyPassword": "",
+	"inValidPasswordLength": "abc",
+	
+	"validConfirmPassword": "123456",
+	"emptyConfirmPassword": "",
+	"misMatchConfirmPassword": "abcd5",
+	
+	"validGeneratePasswordLength": "20",
+	"defaultGeneratedPasswordLength": "12",
+	"inValidGeneratePasswordLength": "65"
+}

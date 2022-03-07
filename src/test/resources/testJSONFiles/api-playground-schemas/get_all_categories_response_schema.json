@@ -1,0 +1,224 @@
+{
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#", 
+	"$id": "https://example.com/object1646440740.json", 
+	"title": "Root", 
+	"type": "object",
+	"required": [
+		"total",
+		"limit",
+		"skip",
+		"data"
+	],
+	"properties": {
+		"total": {
+			"$id": "#root/total", 
+			"title": "Total", 
+			"type": "integer",
+			"examples": [
+				4310
+			],
+			"default": 0
+		},
+		"limit": {
+			"$id": "#root/limit", 
+			"title": "Limit", 
+			"type": "integer",
+			"examples": [
+				10
+			],
+			"default": 0
+		},
+		"skip": {
+			"$id": "#root/skip", 
+			"title": "Skip", 
+			"type": "integer",
+			"examples": [
+				0
+			],
+			"default": 0
+		},
+		"data": {
+			"$id": "#root/data", 
+			"title": "Data", 
+			"type": "array",
+			"default": [],
+			"items":{
+				"$id": "#root/data/items", 
+				"title": "Items", 
+				"type": "object",
+				"required": [
+					"id",
+					"name",
+					"createdAt",
+					"updatedAt",
+					"subCategories",
+					"categoryPath"
+				],
+				"properties": {
+					"id": {
+						"$id": "#root/data/items/id", 
+						"title": "Id", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							"abcat0010000"
+						],
+						"pattern": "^.*$"
+					},
+					"name": {
+						"$id": "#root/data/items/name", 
+						"title": "Name", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							"Gift Ideas"
+						],
+						"pattern": "^.*$"
+					},
+					"createdAt": {
+						"$id": "#root/data/items/createdAt", 
+						"title": "Createdat", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							"2016-11-17T17:57:04.285Z"
+						],
+						"pattern": "^.*$"
+					},
+					"updatedAt": {
+						"$id": "#root/data/items/updatedAt", 
+						"title": "Updatedat", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							"2016-11-17T17:57:04.285Z"
+						],
+						"pattern": "^.*$"
+					},
+					"subCategories": {
+						"$id": "#root/data/items/subCategories", 
+						"title": "Subcategories", 
+						"type": "array",
+						"default": [],
+						"items":{
+							"$id": "#root/data/items/subCategories/items", 
+							"title": "Items", 
+							"type": "object",
+							"required": [
+								"id",
+								"name",
+								"createdAt",
+								"updatedAt"
+							],
+							"properties": {
+								"id": {
+									"$id": "#root/data/items/subCategories/items/id", 
+									"title": "Id", 
+									"type": "string",
+									"default": "",
+									"examples": [
+										"abcat0020004"
+									],
+									"pattern": "^.*$"
+								},
+								"name": {
+									"$id": "#root/data/items/subCategories/items/name", 
+									"title": "Name", 
+									"type": "string",
+									"default": "",
+									"examples": [
+										"Unique Gifts"
+									],
+									"pattern": "^.*$"
+								},
+								"createdAt": {
+									"$id": "#root/data/items/subCategories/items/createdAt", 
+									"title": "Createdat", 
+									"type": "string",
+									"default": "",
+									"examples": [
+										"2016-11-17T17:57:04.285Z"
+									],
+									"pattern": "^.*$"
+								},
+								"updatedAt": {
+									"$id": "#root/data/items/subCategories/items/updatedAt", 
+									"title": "Updatedat", 
+									"type": "string",
+									"default": "",
+									"examples": [
+										"2016-11-17T17:57:04.285Z"
+									],
+									"pattern": "^.*$"
+								}
+							}
+						}
+
+					},
+					"categoryPath": {
+						"$id": "#root/data/items/categoryPath", 
+						"title": "Categorypath", 
+						"type": "array",
+						"default": [],
+						"items":{
+							"$id": "#root/data/items/categoryPath/items", 
+							"title": "Items", 
+							"type": "object",
+							"required": [
+								"id",
+								"name",
+								"createdAt",
+								"updatedAt"
+							],
+							"properties": {
+								"id": {
+									"$id": "#root/data/items/categoryPath/items/id", 
+									"title": "Id", 
+									"type": "string",
+									"default": "",
+									"examples": [
+										"abcat0010000"
+									],
+									"pattern": "^.*$"
+								},
+								"name": {
+									"$id": "#root/data/items/categoryPath/items/name", 
+									"title": "Name", 
+									"type": "string",
+									"default": "",
+									"examples": [
+										"Gift Ideas"
+									],
+									"pattern": "^.*$"
+								},
+								"createdAt": {
+									"$id": "#root/data/items/categoryPath/items/createdAt", 
+									"title": "Createdat", 
+									"type": "string",
+									"default": "",
+									"examples": [
+										"2016-11-17T17:57:04.285Z"
+									],
+									"pattern": "^.*$"
+								},
+								"updatedAt": {
+									"$id": "#root/data/items/categoryPath/items/updatedAt", 
+									"title": "Updatedat", 
+									"type": "string",
+									"default": "",
+									"examples": [
+										"2016-11-17T17:57:04.285Z"
+									],
+									"pattern": "^.*$"
+								}
+							}
+						}
+
+					}
+				}
+			}
+
+		}
+	}
+}

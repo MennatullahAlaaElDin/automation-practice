@@ -1,0 +1,69 @@
+{
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#", 
+	"$id": "https://example.com/object1646441434.json", 
+	"title": "Root", 
+	"type": "object",
+	"required": [
+		"id",
+		"name",
+		"createdAt",
+		"updatedAt",
+		"subCategories",
+		"categoryPath"
+	],
+	"properties": {
+		"id": {
+			"$id": "#root/id", 
+			"title": "Id", 
+			"type": "string",
+			"default": "",
+			"examples": [
+				"19634"
+			],
+			"pattern": "^.*$"
+		},
+		"name": {
+			"$id": "#root/name", 
+			"title": "Name", 
+			"type": "string",
+			"default": "",
+			"examples": [
+				"OBE Category"
+			],
+			"pattern": "^.*$"
+		},
+		"createdAt": {
+			"$id": "#root/createdAt", 
+			"title": "Createdat", 
+			"type": "string",
+			"default": "",
+			"examples": [
+				"2022-03-05T00:49:04.798Z"
+			],
+			"pattern": "^.*$"
+		},
+		"updatedAt": {
+			"$id": "#root/updatedAt", 
+			"title": "Updatedat", 
+			"type": "string",
+			"default": "",
+			"examples": [
+				"2022-03-05T00:49:04.798Z"
+			],
+			"pattern": "^.*$"
+		},
+		"subCategories": {
+			"$id": "#root/subCategories", 
+			"title": "Subcategories", 
+			"type": "array",
+			"default": []
+		},
+		"categoryPath": {
+			"$id": "#root/categoryPath", 
+			"title": "Categorypath", 
+			"type": "array",
+			"default": []
+		}
+	}
+}

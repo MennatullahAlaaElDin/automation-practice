@@ -1,0 +1,10 @@
+{
+	"validFirstName": "Menna",
+
+	"validEmail": "menna@test.com",
+	"inValidEmail": "ab@test",
+		
+	"validPassword": "123456",
+	"inValidPassword": "abc123"
+
+}

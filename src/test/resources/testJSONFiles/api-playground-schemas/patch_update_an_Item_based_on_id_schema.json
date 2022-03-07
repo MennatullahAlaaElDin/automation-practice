@@ -1,0 +1,55 @@
+{
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#", 
+	"$id": "https://example.com/object1646443446.json", 
+	"title": "Root", 
+	"type": "object",
+	"required": [
+		"id",
+		"name",
+		"createdAt",
+		"updatedAt"
+	],
+	"properties": {
+		"id": {
+			"$id": "#root/id", 
+			"title": "Id", 
+			"type": "string",
+			"default": "",
+			"examples": [
+				"84957"
+			],
+			"pattern": "^.*$"
+		},
+		"name": {
+			"$id": "#root/name", 
+			"title": "Name", 
+			"type": "string",
+			"default": "",
+			"examples": [
+				"OBE Category Updated"
+			],
+			"pattern": "^.*$"
+		},
+		"createdAt": {
+			"$id": "#root/createdAt", 
+			"title": "Createdat", 
+			"type": "string",
+			"default": "",
+			"examples": [
+				"2022-03-05T01:20:16.221Z"
+			],
+			"pattern": "^.*$"
+		},
+		"updatedAt": {
+			"$id": "#root/updatedAt", 
+			"title": "Updatedat", 
+			"type": "string",
+			"default": "",
+			"examples": [
+				"2022-03-05T01:23:04.380Z"
+			],
+			"pattern": "^.*$"
+		}
+	}
+}
