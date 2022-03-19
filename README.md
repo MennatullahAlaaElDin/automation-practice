@@ -29,8 +29,7 @@ Tests are using the best practice coding standards, design patterns for maintain
 	+ Right Click on the project > Build path > Configure build path
 	
 #### With intelliJ IDE:
-1. Only with intelliJ IDE:
-	* Latest version of [intelliJ Community](https://www.jetbrains.com/idea/download/#section=windows)
+1. Latest version of [intelliJ Community](https://www.jetbrains.com/idea/download/#section=windows)
 2. Clone the project then open it with IDE and wait until all maven dependencies are download from `pom.xml` file.
 3. Add Listeners as following:
 	- Run/Debug Configurations > Edit Configurations... > Templates > TestNG > Configuration > Listeners > Add all SHAFT_Engine Listeners [AlterSuite, InvokedMethod, Suite] 
